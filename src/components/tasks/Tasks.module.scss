@@ -1,0 +1,15 @@
+.Tasks {
+	.content {
+		button {
+			background-color: darksalmon;
+			width: 150px;
+			height: 35px;
+			border-radius: 9px;
+			cursor: pointer;
+			transition: 3s;
+			&:hover {
+				background-color: darkblue;
+			}
+		}
+	}
+}

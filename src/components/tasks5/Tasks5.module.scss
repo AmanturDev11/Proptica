@@ -1,0 +1,25 @@
+.Tasks5 {
+	margin-top: 20px;
+	.content {
+		button {
+			background-color: darksalmon;
+			width: 100px;
+			height: 40px;
+			border-radius: 9px;
+			cursor: pointer;
+			transition: 1s;
+			&:focus {
+				background: white;
+				color: black;
+			}
+		}
+		.textCard {
+			.cardtitle {
+				background-color: white;
+				color: black;
+				width: 50px;
+				border-radius: 7px;
+			}
+		}
+	}
+}

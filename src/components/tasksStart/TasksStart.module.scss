@@ -1,0 +1,34 @@
+.TasksStart {
+	margin-top: 20px;
+	.content {
+		button {
+			background-color: darksalmon;
+			width: 100px;
+			height: 40px;
+			border-radius: 9px;
+			cursor: pointer;
+			transition: 1s;
+			&:hover {
+				background-color: darkblue;
+			}
+		}
+		.Radius {
+			height: 35px;
+			width: 35px;
+			border: 2px solid rgb(248, 230, 230);
+			border-radius: 50%;
+			border-top: 2px solid rgb(87, 87, 221);
+			animation: spin 1.3s linear infinite;
+		}
+
+		@keyframes spin {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	}
+}

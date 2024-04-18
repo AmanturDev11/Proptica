@@ -1,0 +1,16 @@
+.TasksLast {
+	margin-top: 20px;
+	.content {
+		button {
+			background-color: darksalmon;
+			width: 100px;
+			height: 40px;
+			border-radius: 9px;
+			cursor: pointer;
+			transition: 1s;
+			&:hover {
+				background-color: darkblue;
+			}
+		}
+	}
+}
