@@ -2,9 +2,9 @@ import { useState } from "react";
 import scss from "./Random.module.scss";
 
 export const Random = () => {
-	const [showHome, setShowHome] = useState(false);
-	const [showAbout, setShowAbout] = useState(false);
-	const [showContacts, setShowContacts] = useState(false);
+	const [home, setHome] = useState(false);
+	const [about, setAbout] = useState(false);
+	const [contacts, setContacts] = useState(false);
 
 	return (
 		<div className={scss.Random}>
@@ -12,32 +12,32 @@ export const Random = () => {
 				<div className={scss.content}>
 					<button
 						onClick={() => {
-							setShowHome(true);
-							setShowAbout(false);
-							setShowContacts(false);
+							setHome(true);
+							setAbout(false);
+							setContacts(false);
 						}}>
 						Home
 					</button>
 					<button
 						onClick={() => {
-							setShowHome(false);
-							setShowAbout(true);
-							setShowContacts(false);
+							setAbout(true);
+							setHome(false);
+							setContacts(false);
 						}}>
 						About
 					</button>
 					<button
 						onClick={() => {
-							setShowHome(false);
-							setShowAbout(false);
-							setShowContacts(true);
+							setContacts(true);
+							setHome(false);
+							setAbout(false);
 						}}>
 						Contacts
 					</button>
 					<div className={scss.contentText}>
-						{showHome && <h2 className={scss.classP}>Home</h2>}
-						{showAbout && <h2 className={scss.classP}>About</h2>}
-						{showContacts && <h2 className={scss.classP}>Contacts</h2>}
+						{home && <h2 className={scss.classP}>Home</h2>}
+						{about && <h2 className={scss.classP}>About</h2>}
+						{contacts && <h2 className={scss.classP}>Contacts</h2>}
 					</div>
 				</div>
 			</div>
